@@ -1,4 +1,4 @@
-/* Reset dasar */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,6 @@
     font-family: "Arial", sans-serif;
   }
   
-  /* Body */
   body {
     background-color: #1b1b1b;
     color: #fff;
@@ -15,7 +14,6 @@
     overflow-x: hidden;
   }
   
-  /* Header */
   header {
     background-color: #000000;
     padding: 20px 0;
@@ -66,8 +64,7 @@
     background-color: #00bcd4;
     transform: translateY(-5px);
   }
-  
-  /* Gambar Hero dengan Slide dan Overlay */
+
   .hero-section {
     position: relative;
     width: 100%;
@@ -78,7 +75,7 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
-    background-color: #000; /* fallback in case the images don't load */
+    background-color: #000;
   }
   
   .hero-section::before {
@@ -89,16 +86,15 @@
     width: 100%;
     height: 100%;
     background-image: url("images/gambar\(1\).jpg"), url("images/gambar\(2\).jpg"),
-      url("images/gambar\(3\).jpg"); /* Add your images here */
+      url("images/gambar\(3\).jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: slideImages 15s infinite; /* Adjust duration as needed */
-    filter: brightness(50%); /* Darkens the background image */
+    animation: slideImages 15s infinite; 
+    filter: brightness(50%); 
     z-index: 0;
   }
-  
-  /* Slide Show Animation for Images */
+
   @keyframes slideImages {
     0% {
       background-image: url("images/gambar\(1\).jpg");
@@ -134,8 +130,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  
-  /* Navigasi Kotak-kotak di bawah gambar hero (2x2) */
+
   .grid-nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -160,8 +155,7 @@
     background-color: #00bcd4;
     transform: translateY(-5px);
   }
-  
-  /* Berita Terkini */
+
   .news {
     padding: 50px 20px;
     background-color: #111;
@@ -175,6 +169,7 @@
   }
   
   .news-item {
+    border-radius:
     background-color: #222;
     border-radius: 8px;
     overflow: hidden;
@@ -185,6 +180,10 @@
     justify-content: center;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .news-item h4 {
+      border radius: 10px;
   }
   
   .news-item:hover {
