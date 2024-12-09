@@ -151,9 +151,6 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   
   .grid-item:hover {
