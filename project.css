@@ -183,7 +183,7 @@
   }
 
   .news-item h4 {
-      border radius: 10px;
+      border-radius: 10px;
   }
   
   .news-item:hover {
