@@ -1,4 +1,4 @@
-/* General body styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,6 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Container for main layout */
 .container {
     display: flex;
     gap: 20px;
@@ -15,9 +14,8 @@ body {
     padding: 20px;
 }
 
-/* Main article section */
 .main-article {
-    flex: 2; /* Take up more space */
+    flex: 2; 
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -51,9 +49,8 @@ body {
     margin-bottom: 15px;
 }
 
-/* Related articles section */
 .related-articles {
-    flex: 1; /* Smaller width compared to the main article */
+    flex: 1; 
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -94,10 +91,9 @@ body {
     margin: 5px 0 0 0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack elements vertically */
+        flex-direction: column; 
     }
 
     .main-article, .related-articles {
@@ -105,10 +101,10 @@ body {
     }
 }
 .image-container {
-    text-align: center; /* Menyelaraskan gambar ke tengah secara horizontal */
-    margin: 10px 0; /* Tambahkan margin untuk memberikan ruang di atas dan bawah */
-    max-width: 100%; /* Membuat gambar responsif */
-    height: auto; /* Mempertahankan proporsi gambar */
-    border-radius: 10px; /* Membuat sudut gambar menjadi melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* (Opsional) Menambahkan bayangan untuk tampilan lebih menarik */
+    text-align: center; 
+    margin: 10px 0; 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
