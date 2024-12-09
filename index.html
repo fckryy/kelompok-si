@@ -25,7 +25,6 @@
       </div>
     </header>
 
-    <!-- Gambar Hero dengan Kotak Navigasi -->
     <section class="hero-section" id="heroSection">
       <div class="hero-text">
         <h1>Selamat datang di K3Industri.com</h1>
@@ -36,7 +35,6 @@
       </div>
     </section>
 
-    <!-- Navigasi Kotak-kotak di bawah gambar hero -->
     <div class="grid-nav">
       <div class="grid-item">Sektor Industri</div>
       <div class="grid-item">Pelatihan</div>
@@ -140,7 +138,7 @@
     <script>
       const heroSection = document.getElementById("heroSection");
       const images = [
-        "images/gambar(1).jpg", // Ganti dengan path file gambar lokal
+        "images/gambar(1).jpg",
         "images/gambar(2).jpg",
         "images/gambar(3).jpg",
       ];
@@ -151,7 +149,7 @@
         currentImageIndex = (currentImageIndex + 1) % images.length;
       }
 
-      setInterval(changeImage, 3000); // Ganti gambar setiap 3 detik
+      setInterval(changeImage, 3000); 
     </script>
   </body>
 </html>
