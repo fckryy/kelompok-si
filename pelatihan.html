@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K3Industri.com - Edukasi Keselamatan dan Kesehatan Kerja</title>
+    <link rel="stylesheet" href="project.css">
+    <script>
+        function loadPage(pageId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none'; 
+            });
+
+            const targetSection = document.getElementById(pageId);
+            if (targetSection) {
+                targetSection.style.display = 'block'; 
+            }
+        }
+        
+        window.onload = () => {
+            loadPage('home');
+        };
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="kemnaker.png" />
+                <span>K3Industri</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="projext1.html">BERANDA</a></li>
+                    <li><a href="sektorindustri.html">SEKTOR INDUSTRI</a></li>
+                    <li><a href="pelatihan.html">PELATIHAN</a></li>
+                    <li><a href="dokumenk3.html">DOKUMEN K3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="pelatihan" class="pelatihan-section">
+        <link rel="stylesheet" href="pelatihan.css">
+        <div class="container">
+            <h2>Pelatihan K3</h2>
+            <p>Pelajari lebih lanjut tentang keselamatan dan kesehatan kerja melalui modul pelatihan online kami.</p>
+            <ul>
+                <li><a href="https://ahlik3.co.id/pelatihan.html">Pelatihan Dasar K3</a></li>
+                <li><a href="https://ahlik3.co.id/pelatihan.html">Pelatihan K3 Lanjutan</a></li>
+                <li><a href="https://ahlik3.co.id/pelatihan.html">Pelatihan Supervisor K3</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer id="footer" class="footer">
+        <link rel="stylesheet" href="footer.css">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Informasi Kontak -->
+                <div class="footer-section kontak">
+                    <h3>Hubungi Kami</h3>
+                    <p>Hubungi kami untuk pertanyaan atau konsultasi lebih lanjut mengenai K3.</p>
+                    <p>Email: <a href="mailto:info@k3industri.com">k3industri@gmail.com</a></p>
+                    <p>Telepon: 123-456-7890</p>
+                    <p>Alamat: Bandar Lampung, Provinsi Lampung, Indonesia</p>
+                </div>
+    
+                <!-- Media Sosial -->
+                <div class="footer-section media-sosial">
+                    <h3>Ikuti Kami</h3>
+                    <ul class="social-icons">
+                        <li><a href="#" aria-label="Facebook"><img src="images/gambar(4).png" alt="Facebook"> Facebook</a></li>
+                        <li><a href="#" aria-label="Instagram"><img src="images/gambar(6).png" alt="Instagram"> Instagram</a></li>
+                        <li><a href="#" aria-label="LinkedIn"><img src="images/gambar(5).png" alt="LinkedIn"> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Footer Copyright -->
+            <div class="footer-bottom">
+                <p>© 2024 K3 Industri. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer></body></html>
+        

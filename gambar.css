@@ -1,0 +1,36 @@
+/* Slider container */
+.slider {
+    width: 600px; /* Atur lebar slider */
+    height: 400px; /* Atur tinggi slider */
+    overflow: hidden; /* Sembunyikan bagian gambar di luar area slider */
+    position: relative;
+}
+
+/* Gambar dalam slider */
+.slides {
+    display: flex; /* Menyusun gambar secara horizontal */
+    width: 300%; /* Lebar total untuk menampung semua gambar */
+    animation: slide 10s infinite; /* Animasi bergerak otomatis */
+}
+
+.slides img {
+    width: 600px; /* Lebar tiap gambar */
+    height: 400px; /* Tinggi tiap gambar */
+    object-fit: cover; /* Penyesuaian gambar agar proporsional */
+}
+
+/* Animasi bergerak */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Posisi awal */
+    }
+    33% {
+        transform: translateX(-100%); /* Geser ke gambar kedua */
+    }
+    66% {
+        transform: translateX(-200%); /* Geser ke gambar ketiga */
+    }
+    100% {
+        transform: translateX(0); /* Kembali ke gambar pertama */
+    }
+}

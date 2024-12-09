@@ -1,0 +1,176 @@
+/* Section Styling */
+.section {
+    padding: 40px 30px; /* Menambah padding untuk memberi ruang lebih */
+    background-color: #f7f9fc; /* Warna latar belakang lebih cerah */
+    border-radius: 10px;
+}
+
+/* Container Layout */
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 40px 20px; /* Menambah ruang padding agar konten tidak terlalu rapat */
+}
+
+.container h2 {
+    margin-top: 80px;
+}
+
+/* Layout untuk Dokumen dan Pencarian */
+.dokumen-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Dokumen List Styling */
+.dokumen-list {
+    flex: 2;
+    background-color:white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dokumen-list:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Menambah efek bayangan saat hover */
+}
+
+.dokumen-item {
+    margin-bottom: 30px; /* Menambah margin antar item agar tidak terlalu rapat */
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dokumen-item:last-child {
+    border-bottom: none;
+}
+
+.dokumen-item h3 {
+    font-size: 20px; /* Menambah ukuran font agar lebih jelas */
+    font-weight: 600;
+    color: #003366;
+    margin: 0;
+    padding: 15px 20px;
+    background-color: #f1f4f9;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dokumen-item h3:hover {
+    background-color: #e0e7ff;
+    color: #007bff;
+}
+
+.dokumen-content {
+    display: none;
+    padding: 20px; /* Menambah padding agar konten lebih nyaman dibaca */
+    background-color: #f9f9f9;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.dokumen-content ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.dokumen-content li {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.dokumen-content li a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.dokumen-content li a:hover {
+    text-decoration: underline;
+}
+
+/* Pencarian Peraturan Styling */
+.pencarian-container {
+    flex: 1;
+    background-color: #eaf3fc;
+    border-radius: 12px;
+    padding: 25px; /* Menambah padding untuk elemen pencarian */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1e7ff;
+    transition: none;
+}
+
+.pencarian-container h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.pencarian-container label {
+    display: block;
+    font-size: 15px; /* Menambah sedikit ukuran font agar lebih nyaman dibaca */
+    margin-bottom: 10px; /* Sedikit lebih besar jaraknya */
+    color: #555;
+}
+
+.pencarian-container input,
+.pencarian-container select {
+    width: 95%;
+    padding: 14px 20px; /* Menambah padding untuk input dan select */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.pencarian-container input:focus,
+.pencarian-container select:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #ffffff; /* Warna latar belakang lebih terang saat fokus */
+}
+
+.search-btn {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* Efek sedikit terangkat */
+}
+
+/* Responsif: Untuk tampilan mobile */
+@media (max-width: 768px) {
+    .dokumen-layout {
+        flex-direction: column;
+    }
+
+    .dokumen-list,
+    .pencarian-container {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

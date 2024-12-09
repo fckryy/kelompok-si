@@ -1,0 +1,84 @@
+<style>
+/* Tambahkan gaya CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #89aed6;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    justify-content:right;
+}
+
+.home-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.highlight {
+    color: #89aed6;
+}
+
+.home-description {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #555;
+}
+
+.cta {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #89aed6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.feature-box {
+    width: 22%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0

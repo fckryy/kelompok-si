@@ -1,0 +1,154 @@
+<html lang="id"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K3Industri.com - Edukasi Keselamatan dan Kesehatan Kerja</title>
+    <link rel="stylesheet" href="project.css">
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            if (content) {
+                const isHidden = content.style.display === 'none';
+                content.style.display = isHidden ? 'block' : 'none';
+                button.textContent = isHidden ? '▲' : '▼';
+            }
+        }
+
+        window.onload = () => {
+            document.querySelectorAll('.dokumen-content').forEach(content => {
+                content.style.display = 'none'; // Awalnya tersembunyi
+            });
+        };
+    </script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="kemnaker.png">
+                <span>K3Industri</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="projext1.html">BERANDA</a></li>
+                    <li><a href="sektorindustri.html">SEKTOR INDUSTRI</a></li>
+                    <li><a href="pelatihan.html">PELATIHAN</a></li>
+                    <li><a href="dokumenk3.html">DOKUMEN K3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="dokumen-k3" class="dokumen-k3-section">
+        <link rel="stylesheet" href="dokumenk3.css">
+        <div class="container">
+            <h2>Jenis Peraturan</h2>
+            <div class="dokumen-layout">
+                
+                    <title>Daftar Dokumen K3</title>
+                
+                
+                
+                    <div class="dokumen-list">
+                        <div class="dokumen-item">
+                            <h3 onclick="toggleContent(this)">Undang-Undang/PERPUU terkait K3</h3>
+                            <div class="dokumen-content" style="display: none;">
+                                <ul>
+                                    <li><a href="https://contoh.com/uu1" target="_blank">UU No. 1 Tahun 1970 tentang Keselamatan Kerja</a></li>
+                                    <li><a href="https://contoh.com/perpu5" target="_blank">PERPU No. 5 Tahun 2021 tentang Pengelolaan K3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="dokumen-item">
+                            <h3 onclick="toggleContent(this)">Norma, Standar, Pedoman, Kriteria (NSPK) K3 terkait Bidang SMK3</h3>
+                            <div class="dokumen-content" style="display: none;">
+                                <ul>
+                                    <li><a href="https://contoh.com/permen26" target="_blank">Peraturan Menteri No. 26 Tahun 2014 tentang SMK3</a></li>
+                                    <li><a href="https://contoh.com/pedoman-audit-smk3" target="_blank">Pedoman Teknis Audit SMK3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="dokumen-item">
+                            <h3 onclick="toggleContent(this)">Norma, Standar, Pedoman, Kriteria (NSPK) K3 terkait Bidang Keahlian dan Kelembagaan K3</h3>
+                            <div class="dokumen-content" style="display: none;">
+                                <ul>
+                                    <li><a href="https://contoh.com/standar-kompetensi-k3" target="_blank">Standar Kompetensi K3 Nasional</a></li>
+                                    <li><a href="https://contoh.com/sertifikasi-ahli-k3" target="_blank">Pedoman Sertifikasi Ahli K3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="dokumen-item">
+                            <h3 onclick="toggleContent(this)">Norma, Standar, Pedoman, Kriteria (NSPK) K3 terkait Bidang Uap</h3>
+                            <div class="dokumen-content" style="display: none;">
+                                <ul>
+                                    <li><a href="https://contoh.com/instalasi-uap" target="_blank">Peraturan tentang Instalasi Uap</a></li>
+                                    <li><a href="https://contoh.com/pengujian-boiler" target="_blank">Prosedur Pemeriksaan dan Pengujian Boiler</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        function toggleContent(header) {
+                            const content = header.nextElementSibling; // Ambil elemen berikutnya
+                            const isActive = content.style.display === "block";
+                            content.style.display = isActive ? "none" : "block";
+                        }
+                    </script>
+                
+                <div class="pencarian-container">
+                    <h3>Pencarian Peraturan</h3>
+                    <form>
+                        <label for="nomor">Nomor:</label>
+                        <input type="text" id="nomor" name="nomor" placeholder="Masukkan nomor dokumen">
+
+                        <label for="tahun">Tahun:</label>
+                        <select id="tahun" name="tahun">
+                            <option>- Semua -</option>
+                            <option>2024</option>
+                            <option>2023</option>
+                        </select>
+
+                        <label for="tentang">Tentang:</label>
+                        <input type="text" id="tentang" name="tentang" placeholder="Ketik kata kunci">
+
+                        <button type="submit" class="search-btn">Cari</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <link rel="stylesheet" href="footer.css">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Informasi Kontak -->
+                <div class="footer-section kontak">
+                    <h3>Hubungi Kami</h3>
+                    <p>Hubungi kami untuk pertanyaan atau konsultasi lebih lanjut mengenai K3.</p>
+                    <p>Email: <a href="mailto:info@k3industri.com">k3industri@gmail.com</a></p>
+                    <p>Telepon: 123-456-7890</p>
+                    <p>Alamat: Bandar Lampung, Provinsi Lampung, Indonesia</p>
+                </div>
+    
+                <!-- Media Sosial -->
+                <div class="footer-section media-sosial">
+                    <h3>Ikuti Kami</h3>
+                    <ul class="social-icons">
+                        <li><a href="#" aria-label="Facebook"><img src="images/gambar(4).png" alt="Facebook"> Facebook</a></li>
+                        <li><a href="#" aria-label="Instagram"><img src="images/gambar(6).png" alt="Instagram"> Instagram</a></li>
+                        <li><a href="#" aria-label="LinkedIn"><img src="images/gambar(5).png" alt="LinkedIn"> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Footer Copyright -->
+            <div class="footer-bottom">
+                <p>© 2024 K3 Industri. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer></body></html>

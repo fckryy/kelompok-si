@@ -1,0 +1,143 @@
+/* Footer Styling */
+.footer {
+  background-color: #000000; /* Black background for the footer */
+  color: rgb(9, 9, 9);
+  padding: 40px 0; /* Padding atas dan bawah, menghilangkan padding kiri dan kanan */
+  font-size: 18px; /* Adjusted font size for better readability */
+  margin-top: 50px; /* Space between the rest of the content and footer */
+  width: 100%; /* Full width for the footer */
+  box-sizing: border-box; /* Ensure padding and margin are included in width */
+}
+
+/* Container for content */
+.footer .container {
+  width: 100%; /* Full width of the screen */
+  max-width: 1200px; /* Limiting the max width to make it responsive */
+  margin: 0 auto; /* Centering the container */
+  padding: 0 20px; /* Padding kiri dan kanan sedikit */
+}
+
+/* Footer Content Layout */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Reduced space between columns for a more compact layout */
+  margin-bottom: 40px; /* Added space below the footer content */
+}
+
+/* Individual Footer Sections */
+.footer-section {
+  flex: 1;
+  min-width: 250px; /* Minimum width to avoid tight columns */
+  margin-bottom: 30px; /* Space between footer sections */
+}
+
+/* Footer Section Header */
+.footer-section h3 {
+  font-size: 22px; /* Larger heading size */
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  color: #f1f1f1; /* Light color for section titles */
+}
+
+/* Paragraph Text in Footer Section */
+.footer-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 15px; /* Added space after paragraphs */
+}
+
+/* Footer Section Links */
+.footer-section a {
+  color: #007bff; /* Blue color for links */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Quick Navigation Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px; /* Increased space between list items */
+}
+
+.footer-section ul li a {
+  font-size: 18px; /* Reduced font size for navigation links */
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff;
+}
+
+/* Social Media Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px; /* More space between social icons */
+    justify-content: flex-start; /* Align items to the start of the container */
+}
+
+.social-icons li {
+    display: flex;
+    align-items: center; /* Vertically center the text and icon */
+    gap: 10px; /* Space between icon and text */
+}
+
+.social-icons img {
+    width: 30px; /* Slightly larger icons for better visibility */
+    height: 30px;
+}
+
+/* Social Media Text Styling */
+.social-icons li a {
+    font-size: 18px; /* Font size for the text */
+    color: #e0e0e0; /* Light gray color for text */
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Align text vertically with the icon */
+}
+
+.social-icons li a:hover {
+    color: #007bff; /* Color change on hover */
+}
+
+.social-icons li a img {
+    margin-right: 10px; /* Add some space to the right of the icon */
+}
+
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px; /* Increased space above the footer bottom */
+  border-top: 1px solid #007bff;
+  padding-top: 10px;
+  font-size: 16px;
+  color: #cccccc;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      min-width: 100%; /* Making sections full width on smaller screens */
+      margin-bottom: 20px; /* Less space between sections on mobile */
+  }
+}
