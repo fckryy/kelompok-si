@@ -1,36 +1,34 @@
-/* Slider container */
+
 .slider {
-    width: 600px; /* Atur lebar slider */
-    height: 400px; /* Atur tinggi slider */
-    overflow: hidden; /* Sembunyikan bagian gambar di luar area slider */
+    width: 600px;
+    height: 400px; 
+    overflow: hidden; 
     position: relative;
 }
 
-/* Gambar dalam slider */
 .slides {
-    display: flex; /* Menyusun gambar secara horizontal */
-    width: 300%; /* Lebar total untuk menampung semua gambar */
-    animation: slide 10s infinite; /* Animasi bergerak otomatis */
+    display: flex;
+    width: 300%; 
+    animation: slide 10s infinite; 
 }
 
 .slides img {
-    width: 600px; /* Lebar tiap gambar */
-    height: 400px; /* Tinggi tiap gambar */
-    object-fit: cover; /* Penyesuaian gambar agar proporsional */
+    width: 600px; 
+    height: 400px; 
+    object-fit: cover; 
 }
 
-/* Animasi bergerak */
 @keyframes slide {
     0% {
-        transform: translateX(0); /* Posisi awal */
+        transform: translateX(0);
     }
     33% {
-        transform: translateX(-100%); /* Geser ke gambar kedua */
+        transform: translateX(-100%); 
     }
     66% {
-        transform: translateX(-200%); /* Geser ke gambar ketiga */
+        transform: translateX(-200%); 
     }
     100% {
-        transform: translateX(0); /* Kembali ke gambar pertama */
+        transform: translateX(0);
     }
 }
