@@ -1,15 +1,13 @@
-/* Membuat section dengan background yang lebih redup */
 .pelatihan-section {
     position: relative;
-    background-image: url('pelatihan.jpg'); /* Ganti dengan gambar background */
+    background-image: url('pelatihan.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 200px 0;
-    color: white; /* Warna teks tetap putih */
+    color: white;
     text-align: center;
 }
 
-/* Menambahkan overlay semi-transparan hanya untuk background */
 .pelatihan-section::before {
     content: '';
     position: absolute;
@@ -17,33 +15,29 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan untuk meredupkan gambar */
-    z-index: 0; /* Memastikan overlay berada di bawah teks */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0; 
 }
 
-/* Kontainer teks tetap berada di atas overlay */
 .pelatihan-section .container {
     position: relative;
-    z-index: 1; /* Kontainer teks di atas overlay */
+    z-index: 1;
 }
 
-/* Styling untuk judul dengan text-shadow */
 .pelatihan-section h2 {
-    font-family: 'Poppins', sans-serif; /* Menyamakan font dengan bagian lainnya */
+    font-family: 'Poppins', sans-serif; 
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #00bcd4; /* Warna biru terang */
+    color: #ffffff; 
 
-    /* Menggunakan text-shadow tanpa stroke */
-    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); /* Menambahkan bayangan pada teks */
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); 
 }
 
-/* Styling untuk paragraf (Pelajari lebih lanjut) dengan font yang sama */
 .pelatihan-section p {
-    font-family: 'Poppins', sans-serif; /* Menyamakan font */
+    font-family: 'Poppins', sans-serif; 
     font-size: 1.4rem;
     margin-bottom: 30px;
     line-height: 1.6;
@@ -53,41 +47,37 @@
     font-weight: bold;
 }
 
-/* Styling untuk daftar pelatihan dengan kotak */
 .pelatihan-section ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Membuat daftar pelatihan ditampilkan secara vertikal */
-    align-items: center; /* Memusatkan item di dalam daftar */
+    flex-direction: column; 
+    align-items: center; 
 }
 
-/* Kotak latar belakang pada setiap item pelatihan */
 .pelatihan-section ul li {
     margin-bottom: 15px;
-    width: 90%; /* Lebar kotak sekitar 90% dari lebar container */
-    max-width: 600px; /* Menentukan lebar maksimum untuk kotak */
+    width: 90%; 
+    max-width: 600px;
 }
 
-/* Kotak latar belakang pada setiap item pelatihan */
 .pelatihan-section ul li a {
     display: block;
-    font-family: 'Poppins', sans-serif; /* Menyamakan font */
+    font-family: 'Poppins', sans-serif; 
     text-decoration: none;
     color: #00bcd4;
     font-size: 1.3rem;
     font-weight: 600;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
-    border-radius: 10px; /* Memberikan sudut melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Efek bayangan di sekitar kotak */
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     transition: background-color 0.3s ease, transform 0.3s ease-in-out;
 }
 
-/* Efek hover untuk kotak latar belakang */
 .pelatihan-section ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.9); /* Latar belakang lebih gelap saat hover */
-    color: #ffffff; /* Warna teks menjadi putih saat hover */
-    transform: translateY(-5px); /* Efek mengangkat kotak */
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    transform: translateY(-5px); 
 }
