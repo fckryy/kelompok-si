@@ -66,13 +66,13 @@
     border-radius: 5px;
     border: none;
     background-color: #212426;
-    color: #00bcd4;
+    color: #ffff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .grid-item .btn:hover {
-    background-color: #0000;
+    background-color: #00bcd4;
 }
 
 .mb-4 {
